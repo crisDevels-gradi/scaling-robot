@@ -1,0 +1,93 @@
+@use "../abstracts/variables";
+
+:root {
+  --clr-dark-base: #1D2130;
+  --clr-dark-light: #313852;
+  --clr-accent-blue: #6B7CFF;
+  --clr-light-violet: #E0E4FC;
+  --clr-white: #FFFFFF;
+
+  /* background-gradient */
+  --bg-gradient-1: linear-gradient(45deg, #373FFF, #3ACAF8);
+
+  --fs-h1: 3.5rem;
+  --fs-h2: 3rem;
+  --fs-h3: 2.25rem;
+  --fs-h4: 1.5rem;
+  --fs-h5: 1.125rem;
+  --fs-h6: 1rem;
+
+  --fs-s: 1rem;
+  --fs-m: 1.125rem;
+  --fs-l: 1.5rem;
+
+  --ff-base-regular: 'Roboto', sans-serif;; 
+  --ff-base-bold: 'Roboto Bold', sans-serif;; 
+  --ff-base-light: 'Roboto LT', sans-serif; 
+}
+
+body {
+  background: var(--clr-light-violet, #FFF);
+  font-size: var(--fs-s, 1rem);
+  font-family: var(--ff-base-light);
+}
+
+h1, .h1 {
+  font-size: var(--fs-h1);
+  line-height: 3.85rem;
+  font-family: var(--ff-base-bold);
+  font-weight: 700;
+}
+
+h2, .h2 {
+  font-size: var(--fs-h2);
+  line-height: 3.6rem;
+  font-family: var(--ff-base-bold);
+  font-weight: 700;
+}
+
+h3, .h3 {
+  font-size: var(--fs-h3);
+  line-height: var(--fs-h3);
+  font-family: var(--ff-base-bold);
+  font-weight: 700;
+}
+
+h4, .h4 {
+  font-size: var(--fs-h4);
+  line-height: var(--fs-h3);
+  font-family: var(--ff-base-bold);
+  font-weight: 700;
+}
+
+h5, .h5 {
+  font-size: var(--fs-h5);
+  line-height: var(--fs-h3);
+  font-family: var(--ff-base-bold);
+  font-weight: 700;
+}
+
+h6, .h6 {
+  font-size: var(--fs-h6);
+  line-height: var(--fs-h3);
+  font-family: var(--ff-base-bold);
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-bottom: variables.$space-5;
+
+  @media screen and (max-width: 767px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
