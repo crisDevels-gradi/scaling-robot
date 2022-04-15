@@ -8,8 +8,11 @@
 
   </head>
   <body>
-
     <div class="container">
+      <h2>Design System</h2>
+      <p class="h4">
+        Headings
+      </p>
       <h1>HOLA</h1>
       <h2>HOLA</h2>
       <h3>HOLA</h3>
@@ -18,45 +21,62 @@
       <h6>HOLA</h6>
     </div>
 
-    <div class="container grid list-cards">
-      <div class="card">HOLE</div>
-      <div class="card">HOLE</div>
-      <div class="card">HOLE</div>
-      <div class="card">HOLE</div>
-    </div>
-
-    <div class="container flex plans">
-      <div>
-        <h3 class="h2">
-          Plan 1
-        </h3>
-        <button class="btn-1">
-          Active my plan
-        </button>
-      </div>
-      <div>
-        <h3 class="h2">
-          Plan 2 ⭐
-        </h3>
-        <button class="btn-2">
-          Active my plan
-        </button>
-      </div>
-      <div>
-        <h3 class="h2">
-          Plan 2
-        </h3>
-        <button class="btn-1">
-          Active my plan
-        </button>
+    <div class="container">
+      <h2>Design System</h2>
+      <p class="h4">
+        Grid system
+      </p>
+      <div class="grid list-cards">
+        <div class="card">HOLE</div>
+        <div class="card">HOLE</div>
+        <div class="card">HOLE</div>
+        <div class="card">HOLE</div>
       </div>
     </div>
 
     <div class="container">
-      <h2 class="h3">
-        My forms elements
-      </h2>
-      <form class="grid form" action="/cart">
+      <h2>Design System</h2>
+      <p class="h4">
+        Flex component
+      </p>
+      <div class="flex plans">
+        <div>
+          <h3 class="h2">
+            Plan 1
+          </h3>
+          <button class="btn-1">
+            Active my plan
+          </button>
+        </div>
+        <div>
+          <h3 class="h2">
+            Plan 2 ⭐
+          </h3>
+          <button class="btn-2">
+            Active my plan
+          </button>
+        </div>
+        <div>
+          <h3 class="h2">
+            Plan 2
+          </h3>
+          <button class="btn-1">
+            Active my plan
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Design System</h2>
+      <p class="h4">
+        Form elements
+      </p>
+
+      <form
+        class="grid form"
+        action="/cart"
+      >
         <input
           class="inp"
           type="text"
@@ -85,6 +105,29 @@
           Submit
         </button>
       </form>
+    </div>
+
+    <div class="container">
+      <h2>Manipulación del DOM</h2>
+      <p class="h4">Toggle data-active</p>
+      <button
+        id="open-modal"
+        class="btn-2"
+      >
+        Open modal
+      </button>
+    </div>
+
+    <div class="modal">
+      <button id="close-modal">×</button>
+      <div>
+        <h2 class="h4">
+          Modal title
+        </h2>
+        <p>
+          Modal content
+        </p>
+      </div>
     </div>
 
     <script
