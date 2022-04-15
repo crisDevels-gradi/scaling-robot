@@ -1,0 +1,22 @@
+.form {
+  max-width: 800px;
+  margin: 0 auto;
+
+  --columns: 1fr 1fr;
+  --row-gap: 16px;
+  --column-gap: 16px;
+
+  & > .col-100 {
+    grid-column: 1 / span 2;
+  }
+}
+
+.inp {
+  padding: 20px 24px;
+  border-radius: 8px;
+  border-style: none;
+
+  &:focus {
+    outline: 1px solid var(--clr-accent-blue);
+  }
+}

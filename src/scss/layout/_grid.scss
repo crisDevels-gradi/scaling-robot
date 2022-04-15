@@ -1,9 +1,9 @@
 .grid {
   display: grid;
-  grid-column-gap: var(--gap, 10px);
-  column-gap: var(--gap, 10px);
-  grid-row-gap: var(--gap, 10px);
-  row-gap: var(--gap, 10px);
-  grid-template-columns: var(--columns ,1fr 1fr 1fr);
+  grid-column-gap: var(--column-gap, 10px);
+  column-gap: var(--column-gap, 10px);
+  grid-row-gap: var(--row-gap, 10px);
+  row-gap: var(--row-gap, 10px);
+  grid-template-columns: var(--columns , 1fr 1fr 1fr);
   grid-template-rows: var(--rows, 1fr);
 }
