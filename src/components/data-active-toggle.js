@@ -2,11 +2,6 @@ import { dataActive } from "../utils/data-active";
 import { gQuery } from "../utils/gQuery";
 
 /**
- * To validate state in dataset node
- */
-const isActive = ({ active }) => active === "true";
-
-/**
  * Data Active toggle
  *
  * @param {String} control - ID button
@@ -20,7 +15,7 @@ export function dataActiveToggle(control, node, config = {}) {
     dataActive(gQuery(node), overlay);
   });
 
-  gQuery(closeSelector).addEventListener("click", function () {
+  closeSelector && gQuery(closeSelector).addEventListener("click", function () {
     dataActive(gQuery(node), overlay);
   });
 }
@@ -32,7 +27,7 @@ export function dataActiveToggle(control, node, config = {}) {
  * @param {HTMLElement} node - Node to manipulate
  */
 export function createOverlay(id, active, node) {
-  const idOverlay = `overlay--gQuery{id}`;
+  const idOverlay = `overlay--${id}`;
   const parent = node.parentNode;
 
   if (!active) {
