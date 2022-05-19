@@ -5,7 +5,8 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const JS_DIR = path.resolve(__dirname, './src');
 
 const entry = {
-  index: './src/index.js'
+  index: './src/index.js',
+  payment: './src/payment.js'
 }
 
 const output = {

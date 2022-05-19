@@ -1,0 +1,67 @@
+@use '../abstracts/variables';
+
+.credit-card {
+  max-width: 600px;
+
+  h1 {
+    text-align: center;
+    margin: variables.$space-3 0;
+  }
+
+  &_content {
+    position: relative;
+    margin-top: 50%;
+    padding: 80px 20px 20px;
+    background-color: rgb(244, 244, 244);
+    border-radius: 10px;
+
+    &--card {
+      width: 80%;
+      padding-bottom: 50%;
+      border-radius: 15px;
+      position: absolute;
+      bottom: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+      box-shadow: 10px 10px 20px rgba($color: #000000, $alpha: 0.15);
+      background-color: #DF3512;
+
+      > div {
+        display: none;
+        position: relative;
+        font-family: Courier, sans-serif;
+
+        &[data-active="true"] {
+          display: contents;
+        }
+        
+        > * {
+          position: absolute;
+          padding: 0 30px;
+          color: #FFF;
+        }
+
+        .number-card {
+          width: 100%;
+          bottom: 40%;
+          font-size: 30px;
+        }
+
+        .container--card-name {
+          width: 100%;
+          bottom: 20%;
+          --justify: space-between;
+        }
+
+        .secret-card {
+          width: 100%;
+          padding: 10px 30px;
+          color: #000;
+          background-color: #FFF;
+          bottom: 30%;
+          --justify: flex-end;
+        }
+      }
+    }
+  }
+}
